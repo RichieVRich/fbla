@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/frag_login"
+    android:id="@+id/nav_graph">
+<!--
+    This is the navigation that allows for shortcut naming
+    If something goes wrong with navigation this is a good place to double check.
+-->
+    <fragment
+        android:id="@+id/frag_login"
+        android:name="com.example.myapplication.ui.Login_fragment"
+        android:label="@string/lablel_login"
+        tools:layout="@layout/activity_login"
+        >
+            <action
+                android:id="@+id/action_frag_login_to_frag_homepage"
+                app:destination="@id/frag_homepage" />
+            <action
+                android:id="@+id/action_frag_login_to_frag_admin"
+                app:destination="@id/frag_admin" />
+            <action
+                android:id="@+id/action_frag_login_to_frag_signup"
+                app:destination="@id/frag_signup" />
+    </fragment>
+    <fragment
+        android:id="@+id/frag_homepage"
+        android:name="com.example.myapplication.ui.Homepage_fragment"
+        android:label=""
+        tools:layout="@layout/homepage"
+        >
+            <action
+                android:id="@+id/action_frag_homepage_to_frag_qrcode"
+                app:destination="@id/frag_qrcode" />
+    </fragment>
+    <fragment
+        android:id="@+id/frag_qrcode"
+        android:name="com.example.myapplication.ui.Qrcode_fragment"
+        android:label="@string/lablel_qrcode"
+        tools:layout="@layout/activity_qrcode"
+        >
+    </fragment>
+    <fragment
+        android:id="@+id/frag_signup"
+        android:name="com.example.myapplication.ui.Signup_fragment"
+        android:label="@string/lablel_signup"
+        tools:layout="@layout/signup"
+        >
+    </fragment>
+    <fragment
+        android:id="@+id/frag_admin"
+        android:name="com.example.myapplication.ui.Admin_fragment"
+        android:label="@string/label_admin"
+        tools:layout="@layout/activity_admin"
+        >
+    </fragment>
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.myapplication.ui.Setting_fragment"
+        android:label="@string/setting"
+        />
+
+
+
+</navigation>

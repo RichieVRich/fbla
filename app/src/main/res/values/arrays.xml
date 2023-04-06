@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Array for the spinner choices
+         - Admin
+    -->
+    <string-array name="categories">
+        <item>@string/arr_default</item>
+        <item>@string/arr_assembly</item>
+        <item>@string/arr_band</item>
+        <item>@string/arr_basketball</item>
+        <item>@string/arr_choir</item>
+        <item>@string/arr_club</item>
+        <item>@string/arr_dance</item>
+        <item>@string/arr_football</item>
+        <item>@string/arr_soccer</item>
+        <item>@string/arr_spirtwk</item>
+        <item>@string/arr_swim</item>
+        <item>@string/arr_track</item>
+        <item>@string/arr_volleyball</item>
+    </string-array>
+    <!--
+        An array for the school year
+            - Sign up
+    -->
+    <string-array name="school_year">
+        <item>@string/arr_year2023</item>
+        <item>@string/arr_year2024</item>
+        <item>@string/arr_year2025</item>
+        <item>@string/arr_year2026</item>
+    </string-array>
+</resources>

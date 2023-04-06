@@ -1,0 +1,66 @@
+<resources>
+    <!--
+        Login resources
+    -->
+    <string name="app_name">My Application</string>
+    <string name="id_password">PASSWORD</string>
+    <string name="id_school">SCHOOL ID</string>
+    <string name="hint_1">or</string>
+    <string name="btn_create">Create an account</string>
+    <string name="btn_nevent">Add Event</string>
+    <string name="username">Username</string>
+
+    <string name="event">Event</string>
+    <string name="home">Home</string>
+    <string name="qr">QR</string>
+    <string name="setting">Setting</string>
+    <!--
+        Sign up resource
+    -->
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Initial</string>
+    <string name="gender">Gender</string>
+    <string name="schoolid">School ID</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="password">Password</string>
+    <string name="repassword">Retype Password</string>
+    <string name="create">Create</string>
+    <string name="back">Back</string>
+    <!--
+        Events list
+    -->
+    <string name="arr_default">New Event</string>
+    <string name="arr_basketball">Basketball</string>
+    <string name="arr_football">Football</string>
+    <string name="arr_volleyball">Volleyball</string>
+    <string name="arr_swim">Swim</string>
+    <string name="arr_soccer">Soccer</string>
+    <string name="arr_track">Track</string>
+    <string name="arr_dance">Dance</string>
+    <string name="arr_assembly">Assembly</string>
+    <string name="arr_spirtwk">Spirit Week</string>
+    <string name="arr_club">Club</string>
+    <string name="arr_choir">Choir</string>
+    <string name="arr_band">Band</string>
+
+    <string name="label_home">Hello, </string>
+    <!--
+        Static Spinner choices
+    -->
+    <string name="arr_year2023">Class of 2023</string>
+    <string name="arr_year2024">Class of 2024</string>
+    <string name="arr_year2025">Class of 2025</string>
+    <string name="arr_year2026">Class of 2026</string>
+    <!--
+        Labels for Toolbar
+    -->
+    <string name="lablel_text">Text</string>
+    <string name="lablel_signup">Sign Up</string>
+    <string name="lablel_qrcode">QR Code</string>
+    <string name="lablel_login">BETA</string>
+    <string name="label_admin">Admin</string>
+
+
+
+</resources>
