@@ -33,6 +33,9 @@
             <action
                 android:id="@+id/action_frag_homepage_to_frag_qrcode"
                 app:destination="@id/frag_qrcode" />
+        <action
+            android:id="@+id/action_frag_homepage_to_event_students"
+            app:destination="@id/event_students" />
     </fragment>
     <fragment
         android:id="@+id/frag_qrcode"
@@ -47,6 +50,9 @@
         android:label="@string/lablel_signup"
         tools:layout="@layout/signup"
         >
+        <action
+            android:id="@+id/action_frag_signup_to_frag_login"
+            app:destination="@id/frag_login" />
     </fragment>
     <fragment
         android:id="@+id/frag_admin"
@@ -60,7 +66,12 @@
         android:name="com.example.myapplication.ui.Setting_fragment"
         android:label="@string/setting"
         />
-
+    <fragment
+        android:id="@+id/event_students"
+        tools:layout="@layout/event_fragment"
+        android:name="com.example.myapplication.ui.Student_Event_Fragment"
+        android:label="@string/event"
+        />
 
 
 </navigation>

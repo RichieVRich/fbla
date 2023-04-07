@@ -12,6 +12,7 @@ import com.example.myapplication.user.App
 class Homepage_fragment : Fragment(R.layout.homepage) {
 
     private lateinit var qrbtn: Button
+    private lateinit var eventbtn: Button
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -24,6 +25,8 @@ class Homepage_fragment : Fragment(R.layout.homepage) {
      */
     private fun initVar(view: View){
         qrbtn = view.findViewById(R.id.btn_qr)
+        eventbtn = view.findViewById(R.id.btn_event)
+
         (activity as AppCompatActivity).supportActionBar?.title = "Hello, ${App.user}"
     }
 /*
@@ -31,6 +34,7 @@ class Homepage_fragment : Fragment(R.layout.homepage) {
  */
     private fun onClickListen(){
         qrbtn.setOnClickListener { onQRClick() }
+         eventbtn.setOnClickListener { onEventClick() }
 
     }
     /*
@@ -38,6 +42,10 @@ class Homepage_fragment : Fragment(R.layout.homepage) {
      */
     private fun onQRClick(){
         val directions = Homepage_fragmentDirections.actionFragHomepageToFragQrcode()
+        findNavController().navigate(directions)
+    }
+    private fun onEventClick(){
+        val directions = Homepage_fragmentDirections.actionFragHomepageToEventStudents()
         findNavController().navigate(directions)
     }
 }

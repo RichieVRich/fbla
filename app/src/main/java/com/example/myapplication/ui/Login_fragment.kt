@@ -26,8 +26,11 @@ class Login_fragment: Fragment(R.layout.activity_login) {
 
                 if (username.text.isNotEmpty() && password.text.isNotEmpty() ) {
                     val user = username.text.toString()
+                    val password = password.text.toString()
                     App.user = user
-                    if (user == "Admin") {
+                    // Yes this isn't safe
+                    // Remove this when profile database is setup
+                    if (user == "Admin" && password == "123") {
                         onAdminClick()
                     } else {
                         onLoginClick()

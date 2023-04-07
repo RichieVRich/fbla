@@ -61,6 +61,12 @@
     <string name="lablel_login">BETA</string>
     <string name="label_admin">Admin</string>
 
+    <!--
+        Points
+     -->
+    <string name="great_pts">10</string>
+    <string name="lesser_pts">5</string>
+
 
 
 </resources>

@@ -29,4 +29,11 @@
         <item>@string/arr_year2025</item>
         <item>@string/arr_year2026</item>
     </string-array>
+    <!--
+        Array to house the points
+    -->
+    <string-array name="points">
+        <item>@string/great_pts</item>
+        <item>@string/lesser_pts</item>
+    </string-array>
 </resources>

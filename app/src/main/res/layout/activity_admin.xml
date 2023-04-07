@@ -10,20 +10,41 @@
     android:orientation="vertical"
     android:padding="8dp">
     <Spinner
+        android:id="@+id/spinner_events"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:spinnerMode="dropdown"
 
         android:entries="@array/categories"/>
-    <EditText
-        android:layout_width="wrap_content"
+    <Spinner
+        android:id="@+id/spinner_points"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="22sp"/>
+        android:spinnerMode="dropdown"
+        android:entries="@array/points"/>
     <Button
+        android:id="@+id/btn_add_event"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btn_nevent"/>
+    <Button
+        android:id="@+id/btn_delete_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete all"
+        />
+    <Button
+        android:id="@+id/btn_read_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read data"/>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_event_database"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/trans_black"
+        />
 
 
 </LinearLayout>
